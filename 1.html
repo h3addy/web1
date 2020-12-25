@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>My HTML Document</title>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<div id="div1" class="mydivs">
+	<h1 id="h11">Heading</h1><br>
+	</div>
+	<button id="b1">Click me</button><br>
+	<img id="img1" width="300" height="300" src="side  1.jpg" onmouseover="setNewImg()" onmouseout="setOldImg()"/>
+	<div id="div1">
+		<p>P Tag 1</p>
+	</div>
+	<div id="div2">
+		<p class="p2">P Tag 2</p>
+	</div>
+	<input type="text" id="no1" placeholder="First Number"></input><br>
+	<input type="text" id="no2" placeholder="Second Number"></input><br>
+	<input type="button" value="Add" onclick="add()"></input>&nbsp;
+	<input type="button" value="Sub" onclick="sub()"></input><br>
+	<input type="button" value="Mul" onclick="mul()"></input>&nbsp;
+	<input type="button" value="Div" onclick="div()"></input><br>
+	<input type="button" value="Rem" onclick="rem()"></input>&nbsp;
+	<input type="button" value="Sqr" onclick="sqr()"></input><br>
+	<input type="button" value="Concate" onclick="concate()"></input>&nbsp;
+	<input type="button" value="" onclick=""></input><br>
+	<input type="text" id="res"></input><br>
+	<input type="button" value="Object1" onclick="Car.containsAutoPilot()"></input><br>
+	<input type="button" value="Object2" onclick="new Cars('MS','SWift').containsAutoPilot()"></input><br>
+	<input type="radio" id="rd1" name="grp1" value="N1">1st</input><br>
+	<input type="radio" id="rd2" name="grp1" value="A1">latest</input><br>
+	<input type="button" value="RadioT" onclick="radioFn()"></input><br>
+	<input type="button" value="fn1" onclick="new fn1().fn2()"></input><br>
+	<select id="select1">
+		<option value="Hello1">Hello1</option>
+		<option value="Hello2">Hello2</option>
+		<option value="Hello3">Hello3</option>
+	</select><br>
+	<input type="button" value="Select" onclick="selectFn()"></input><br>
+	<p>O</p>
+	<p>M</p>
+	<input type="button" value="Color" onclick="changeColor()"></input><br>
+	<input type="text" id="uname"></input><br>
+	<label id="l1" visibility="hidden"></label>
+	<input type="button" id="re1" onclick="validate()" value="RegEx"/><br>
+	<img id="img12" width="100" height="300" src="side  1.jpg" onmouseover="trig3()" onmouseout="trig4()"/>
+</body>
+<script src="object1.js" type="text/javascript"></script>
+<script src="object2.js" type="text/javascript"></script>
+<script src="demo.js" type="text/javascript"></script>
+<script src="regexs.js" type="text/javascript"></script>
+<!--<script src="jquery.js" type="text/javascript"></script>-->
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script>
+	$(document).ready(function() {
+		$("#b1").click(fn1);
+		function fn1(){
+			//$("#h11").fadeToggle(2000);
+			$("#div1,#div2").fadeToggle(1500);
+		}
+	})
+	
+</script>
+</html>
